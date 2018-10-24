@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SecondPage</class>
+ <widget class="QMainWindow" name="SecondPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>534</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>180</y>
+      <width>341</width>
+      <height>252</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QListWidget" name="list1"/>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="b1">
+         <property name="text">
+          <string>Batsman</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="b2">
+         <property name="text">
+          <string>Bowler</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="b3">
+         <property name="text">
+          <string>Wiket-Keeper</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="b4">
+         <property name="text">
+          <string>All-rounder</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>491</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>191</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Images/cricket-fantasy-logo-1.png</pixmap>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>layoutWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>534</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManage_Players">
+    <property name="title">
+     <string>Manage Players</string>
+    </property>
+    <addaction name="p11"/>
+    <addaction name="p12"/>
+    <addaction name="p13"/>
+   </widget>
+   <widget class="QMenu" name="menuManage_Teams">
+    <property name="title">
+     <string>Manage Teams</string>
+    </property>
+    <addaction name="t11"/>
+    <addaction name="t12"/>
+    <addaction name="t13"/>
+   </widget>
+   <addaction name="menuManage_Players"/>
+   <addaction name="menuManage_Teams"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="p1">
+   <property name="text">
+    <string>Add </string>
+   </property>
+  </action>
+  <action name="p2">
+   <property name="text">
+    <string>Find</string>
+   </property>
+  </action>
+  <action name="a3">
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="tm1">
+   <property name="text">
+    <string>New Team</string>
+   </property>
+  </action>
+  <action name="tm2">
+   <property name="text">
+    <string>OpenTeam</string>
+   </property>
+  </action>
+  <action name="tm3">
+   <property name="text">
+    <string>Evaluate Team</string>
+   </property>
+  </action>
+  <action name="p3">
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="p11">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/addicon.jpg</normaloff>Images/addicon.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Add Player</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="p12">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/findicon.png</normaloff>Images/findicon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Find Player</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="p13">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/deleteicon.jpg</normaloff>Images/deleteicon.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Delete Player</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="t11">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/newteam.jpg</normaloff>Images/newteam.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>New Team</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="t12">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/Open team.jpg</normaloff>Images/Open team.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Open Team</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="t13">
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/Evaluate team.png</normaloff>Images/Evaluate team.png</iconset>
+   </property>
+   <property name="text">
+    <string>Evaluate Team</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
